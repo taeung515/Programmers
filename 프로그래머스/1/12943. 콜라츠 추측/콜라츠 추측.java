@@ -1,18 +1,17 @@
 class Solution {
-    public int solution(int num) {
+    public int solution(long num) {
         int answer = 0;
-        long num1 = num;
         
-        if(num1 == 1){
+        if(num == 1){
             return 0;
         }
         
-        while (num1 != 1){
+        while (num != 1){
             
-            if(num1 % 2 == 0){
-                num1 /= 2;
+            if(num % 2 == 0){
+                num /= 2;
             }else{
-                num1 = num1 * 3 + 1;
+                num = num * 3 + 1;
             }
             answer ++;
             
